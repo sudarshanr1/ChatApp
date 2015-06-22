@@ -2,12 +2,12 @@
 	<div id="searchSection" class="floatLeft">
 		<div class="searchUser inner-addon left-addon">
 			<i class="glyphicon glyphicon-search"></i>
-			<input class="searchUserText" type="text" ng-model="userName" />
+			<input class="searchUserText" type="text" ng-model="userName" placeholder="Search Users"/>
 		</div>
 		<div class="allUsers">
 			<ul>
-				<li ng-repeat="contact in getAllContactsInformation | orderBy:'name'|filter: {name: userName || ''}" ng-click="showMessages(contact)">
-				{{contact.name}} 
+				<li  ng-class="{active: selectedItem == contact.id}" ng-repeat="contact in getAllContactsInformation | orderBy:'name'|filter: {name: userName || ''}" ng-click="showMessages(contact)" >
+				{{contact.name}}
 				<span ng-show="contact.notification">
 					<i class="glyphicon glyphicon-comment"></i>
 				</span>
@@ -37,9 +37,8 @@
 				<input type="text" ng-model="messageText"/>
 			</div>
 			<div>
-				<a class="btn btn-primary" role="button" ng-click="sendMessage()">Button</a>
+				<a class="sendMessage btn btn-primary" role="button" ng-click="sendMessage()">Send Message</a>
 			</div>
 		</div>
 	</div>
-	
 </div>

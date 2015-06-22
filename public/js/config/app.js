@@ -1,5 +1,5 @@
 var myAppModule = angular.module('myApp', []);
-myAppModule.config(['$routeProvider',
+myAppModule.config(['$routeProvider','$httpProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {

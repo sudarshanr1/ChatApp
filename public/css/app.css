@@ -82,7 +82,7 @@ input{
 }
 
 .messageText{
-	width: 90%;
+	width: 85%;
 }
 
 .userInfo {
@@ -104,7 +104,9 @@ input{
 	padding: 20px;
 	border-radius: 10px;
 }
-
+.active{
+	background-color: #EAE3E3;
+}
 .inner-addon { 
     position: relative; 
 }
