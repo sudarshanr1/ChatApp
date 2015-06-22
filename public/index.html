@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <h1>TODO - An instant messaging interface</h1>
+        <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid headerText">
+	            <h2>WhatsHappening</h2>
+	        </div>
+	    </nav>
+	    <!-- Good luck -->
+	    <div id="mainWrap">
+	        <div class="chatContent">
+	            <div ng-view>
+	        
+	            </div>
+	        </div>
+	    </div>
+    </body>
+<script src="../js/vendor/angular.min.js"></script>
+<script src="../js/vendor/jquery-1.9.1.js"></script>
+<script src="../js/config/app.js"></script>
+<script src="../js/controller/appController.js"></script>
+<script src="../js/service/chatService.js"></script>
+<script src="../js/directive/scrollBottom.js"></script>
+</html>

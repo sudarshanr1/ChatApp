@@ -1,0 +1,45 @@
+<div id="mainContent" class="container-fluid">
+	<div id="searchSection" class="floatLeft">
+		<div class="searchUser inner-addon left-addon">
+			<i class="glyphicon glyphicon-search"></i>
+			<input class="searchUserText" type="text" ng-model="userName" />
+		</div>
+		<div class="allUsers">
+			<ul>
+				<li ng-repeat="contact in getAllContactsInformation | orderBy:'name'|filter: {name: userName || ''}" ng-click="showMessages(contact)">
+				{{contact.name}} 
+				<span ng-show="contact.notification">
+					<i class="glyphicon glyphicon-comment"></i>
+				</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="chatSection" class="floatLeft" ng-show="messages">
+		<div class="userInfo">
+			<h2>{{name}}</h2>
+			<div>{{contactNumber}}</div>
+		</div>
+		<div class="chatHistory" scroll-bottom>
+			<ul>
+				<li ng-repeat="message in messages">
+					<div ng-show="message.type =='recv'">
+						<div class="alighLeft">{{message.content}}</div>
+					</div>
+					<div ng-show="message.type =='sent'">
+						<div class="alighRight">{{message.content}}</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="messageSection">
+			<div class="messageText floatLeft">
+				<input type="text" ng-model="messageText"/>
+			</div>
+			<div>
+				<a class="btn btn-primary" role="button" ng-click="sendMessage()">Button</a>
+			</div>
+		</div>
+	</div>
+	
+</div>

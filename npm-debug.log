@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/sudarshan/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz', '.' ]
+11 verbose tarball /home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz
+12 verbose folder .
+13 info prepublish WhatsHappening@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/sudarshan/.npm/1f1177db-tar.lock
+16 silly lockFile 8f503f77-WhatsHappening-1-0-0-package-tgz tar:///home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz
+17 verbose lock tar:///home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz /home/sudarshan/.npm/8f503f77-WhatsHappening-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 8f503f77-WhatsHappening-1-0-0-package-tgz tar:///home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz
+21 silly lockFile 8f503f77-WhatsHappening-1-0-0-package-tgz tar:///home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz
+22 silly lockFile 8437acd3-npm-WhatsHappening-1-0-0-package /home/sudarshan/.npm/WhatsHappening/1.0.0/package
+23 verbose lock /home/sudarshan/.npm/WhatsHappening/1.0.0/package /home/sudarshan/.npm/8437acd3-npm-WhatsHappening-1-0-0-package.lock
+24 silly lockFile 8437acd3-npm-WhatsHappening-1-0-0-package /home/sudarshan/.npm/WhatsHappening/1.0.0/package
+25 silly lockFile 8437acd3-npm-WhatsHappening-1-0-0-package /home/sudarshan/.npm/WhatsHappening/1.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly resolved [ { name: 'WhatsHappening',
+28 silly resolved     version: '1.0.0',
+28 silly resolved     description: 'An instant messaging application',
+28 silly resolved     main: 'index.js',
+28 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly resolved     author: '',
+28 silly resolved     license: 'MIT',
+28 silly resolved     dependencies: { 'body-parser': '^1.12.4', express: '^4.12.3' },
+28 silly resolved     readme: '# Brocade Front-end engineer Candidate Project\n\n##Objective\nBuild a simple messaging webapp using an existing REST API. You can use any tools, frameworks, or libraries that you like, but it must be an HTML-5 based application.\n\n## Requirements\n\nThe basic requirements for the app are covered in the mockup below.\n\n![User interface mockup](https://raw.githubusercontent.com/brocadeengquestions/frontendjs/master/mockup.png)\n\nThe key functional requirements are as follows\n\n* Typing into the search field should filter the list of contacts such that only those whose name contains the search term should be shown.\n* Clicking on a contact should bring up their message history and their details. The message history should update without user input as new messages arrive.\n* When the user clicks the Send button, the message they typed should be added to the message history using the REST API, and shown in the message history, but only if the API call succeeds.\n* When a new message is received for a contact that is not currently selected, a notification icon should appear next to their name (As in the case of Adam West in the mockup). \n* Once the user clicks on a contact, any notification icon next to their name should disappear.\n\nA simple REST API that you must integrate with has been provided\n\n* **GET /api/contacts**\n\n  Lists out the ids of all contacts.\n  \n* **GET /api/contacts/{id}**\n\n  Shows the details for a particular contact.\n  \n* **GET /api/contacts/{id}/messages**\n\n  Shows the message history for a particular contact.\n  \n* **POST /api/contacts/{id}/messages**\n\n  Allows the user to send a message to a contact. This API accepts a JSON object of the form { content: \'message\' } as its POST data.\n  \n* **GET /api/notifications**\n\n  Contains a list the ids of all contacts that have sent a message since the last time the API was called. This API should be polled every 5 seconds to allow the UI to show notifications and update message histories as new messages arrive.\n\n## Deploying the web app\n\nInstructions for getting the webapp working\n\n1. Download this repo as a zip file and extract to your local file system\n2. Download and install node.js and npm for your OS.\n3. cd into the same directory as this README and run ```npm install```\n4. Start the server by running ```node index.js```\n5. navigate to http://localhost:3000 in your web browser\n\n## Building your Web Application\n\nPlace any HTML, Javascript, and CSS files you create in the public folder. You can add/modify web files in the public folder while the server is running; just refresh the browser to see your changes.\n\nOnce you complete the task, please send the changes back to recruiter in a zip file (NOTE: Don\'t include the contents of the node_modules folder in the zip file - make sure your package.json includes all npm package dependancies so we can get your solution running by running ```npm install```).\n\n',
+28 silly resolved     readmeFilename: 'README.md',
+28 silly resolved     _id: 'WhatsHappening@1.0.0',
+28 silly resolved     _shasum: 'cf8eb4354bed532fbeb107826b8896bc76f554eb',
+28 silly resolved     _from: '.' } ]
+29 info install WhatsHappening@1.0.0 into /usr/lib
+30 info installOne WhatsHappening@1.0.0
+31 verbose lib/node_modules/WhatsHappening unbuild
+32 verbose tar unpack /home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz
+33 silly lockFile 0200aa01--lib-node-modules-WhatsHappening tar:///usr/lib/node_modules/WhatsHappening
+34 verbose lock tar:///usr/lib/node_modules/WhatsHappening /home/sudarshan/.npm/0200aa01--lib-node-modules-WhatsHappening.lock
+35 silly lockFile 8f503f77-WhatsHappening-1-0-0-package-tgz tar:///home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz
+36 verbose lock tar:///home/sudarshan/.npm/WhatsHappening/1.0.0/package.tgz /home/sudarshan/.npm/8f503f77-WhatsHappening-1-0-0-package-tgz.lock
+37 silly gunzTarPerm modes [ '775', '664' ]
+38 error Error: EACCES, mkdir '/usr/lib/node_modules/WhatsHappening'
+38 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/WhatsHappening']
+38 error   errno: 3,
+38 error   code: 'EACCES',
+38 error   path: '/usr/lib/node_modules/WhatsHappening',
+38 error   fstream_type: 'Directory',
+38 error   fstream_path: '/usr/lib/node_modules/WhatsHappening',
+38 error   fstream_class: 'DirWriter',
+38 error   fstream_stack:
+38 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+38 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+38 error      'Object.oncomplete (fs.js:108:15)' ] }
+39 error Please try running this command again as root/Administrator.
+40 error System Linux 3.13.0-32-generic
+41 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g"
+42 error cwd /home/Study Materials/frontendjs-master
+43 error node -v v0.10.37
+44 error npm -v 1.4.28
+45 error path /usr/lib/node_modules/WhatsHappening
+46 error fstream_path /usr/lib/node_modules/WhatsHappening
+47 error fstream_type Directory
+48 error fstream_class DirWriter
+49 error code EACCES
+50 error errno 3
+51 error stack Error: EACCES, mkdir '/usr/lib/node_modules/WhatsHappening'
+52 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+52 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+52 error fstream_stack Object.oncomplete (fs.js:108:15)
+53 verbose exit [ 3, true ]
