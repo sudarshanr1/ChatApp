@@ -4,7 +4,7 @@ myAppModule.service('ChatService',function($http,$q){
   	*/
 	this.getAllContacts = function(){
 		var url = "/api/contacts";
-		var deferred = $q.defer().promise;
+		var promise = $q.defer().promise;
 		promise = $http.get(url);
 		return promise;
 	}
@@ -13,7 +13,7 @@ myAppModule.service('ChatService',function($http,$q){
   	*/
 	this.getAllContactsInformation = function(id){
 		var url = "/api/contacts/"+id;
-		var deferred = $q.defer().promise;
+		var promise = $q.defer().promise;
 		promise = $http.get(url);
 		return promise;
 	}
@@ -22,7 +22,7 @@ myAppModule.service('ChatService',function($http,$q){
   	*/
 	this.getChatHistory = function(id){
 		var url = "/api/contacts/"+id+"/messages";
-		var deferred = $q.defer().promise;
+		var promise = $q.defer().promise;
 		promise = $http.get(url);
 		return promise;
 	}
@@ -30,7 +30,7 @@ myAppModule.service('ChatService',function($http,$q){
 	*Method to send the message for the selected recepient
   	*/
 	this.sendMessage = function(obj){
-		var deferred = $q.defer().promise;
+		var promise = $q.defer().promise;
 		var post = {};
 		post.content = obj.content;
 		var postUrl = "/api/contacts/"+obj.id+"/messages";
@@ -42,7 +42,7 @@ myAppModule.service('ChatService',function($http,$q){
   	*/
 	this.getNotificationIds = function(){
 		var url = "/api/notifications";
-		var deferred = $q.defer().promise;
+		var promise = $q.defer().promise;
 		promise = $http.get(url);
 		return promise;
 	}
